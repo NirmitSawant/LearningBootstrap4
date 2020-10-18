@@ -32,6 +32,7 @@
     <p>Click any of the following to check out basic bootstrap elements</p>
     
     <div class="header-buttons">
+      <a data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?" class="btn " role="button">Popover</a>
       <a class="btn " href="badge.html" role="button">Badge</a>
       <a class="btn " href="buttons.html" role="button">Buttons</a>
       <a class="btn " href="card_new.html" role="button">Card New</a>
@@ -75,5 +76,18 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+<script>
+  $(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
+$(function () {
+  $('.example-popover').popover({
+    container: 'body'
+  })
+})
+</script>
 </body>
 </html>
