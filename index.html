@@ -9,6 +9,8 @@
     
 </head>
 <body>
+
+  
   
    <!-- Image and text -->
    <div>
@@ -31,9 +33,13 @@
     <h1 class="font-weight-bold">Bootstrap </h1>
     <p>Click any of the following to check out basic bootstrap elements</p>
     
+    
+
     <div class="header-buttons">
-      <a class="btn " href="badge.html" role="button">Badge</a>
-      <a class="btn " href="buttons.html" role="button">Buttons</a>
+      
+      <!-- <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button> -->
+
+      <a data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?" class="btn " role="button">Badge</a><a class="btn " href="buttons.html" role="button">Buttons</a>
       <a class="btn " href="card_new.html" role="button">Card New</a>
       <a class="btn " href="cards.html" role="button">Cards</a>
       <a class="btn" href="carousel.html" role="button">Carousel</a>
@@ -67,7 +73,9 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <!-- jQuery library -->
+
+
+<!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Popper JS -->
@@ -75,5 +83,17 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+    
+    $(function () {
+      $('.example-popover').popover({
+        container: 'body'
+      })
+    })
+    </script>
 </body>
 </html>
