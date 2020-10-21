@@ -1,5 +1,5 @@
 # Learning Bootstrap-4(Code for Noobs)
-Attempt to learn Bootstrap-4 for my class project. Now, I am really interested in this and yes.
+Attempt to learn Bootstrap-4 for my class project. Now, I am really interested in this.
 
 ## What to expect?
 _This isnt best Bootstrap code, if you are trying to find but a simple modules to use in your code._
